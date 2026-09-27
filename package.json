@@ -1,0 +1,47 @@
+{
+  "name": "@hermesagentai/cron-cost",
+  "version": "0.1.1",
+  "description": "See what each Hermes cron job actually costs you.",
+  "keywords": [
+    "hermes-agent",
+    "hermes",
+    "cron",
+    "ai-agent",
+    "token-usage",
+    "cost",
+    "cli",
+    "llm"
+  ],
+  "homepage": "https://www.hermesagentai.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiz-is/hermes-cron-cost.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fiz-is/hermes-cron-cost/issues"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "bin": {
+    "hermes-cron-cost": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "test": "node --test --disable-warning=ExperimentalWarning test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "typescript": "^5.9.3"
+  }
+}
